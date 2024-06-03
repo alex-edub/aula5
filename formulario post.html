@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <div class="form-container">
+            <h1 class="form-title">Formulário de contato</h1>
+            <form method="POST" class="form">
+                <div class="form-group">
+                    <label class="form-label">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" name="name" id="name" class="form-input" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input class="form-input" id="email" placeholder="exemplo@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form label" for="subject">Assunto</label>
+                    <select class="form-input" id="subject" name="subject">
+                        <option disabled selected="selecione um assunto">Selecione um assunto</option>
+                        <option value="contato">Contato</option>
+                        <option value="orcamento">Orçamento</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="=form-label" for="message">Mensagem</label>
+                    <textarea class="form-textarea" id="message" placeholder="Message=" name="name"></textarea>
+                </div>
+                <input class="form-button" type="submit" value="Enviar" />
+            </form>
+    </main>
+</body>
+
+</html>
